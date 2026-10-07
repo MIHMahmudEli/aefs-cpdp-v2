@@ -1,0 +1,12 @@
+# Authoritative environment: every number in results/ and sensitivity/results/
+# was produced with exactly these versions.
+numpy==2.5.1
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.0
+lightgbm==4.7.0
+imbalanced-learn==0.14.2
+shap==0.52.0
+
+# tooling used by scripts/
+tqdm==4.70.0
