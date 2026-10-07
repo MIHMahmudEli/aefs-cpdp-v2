@@ -1,0 +1,5 @@
+method,mean_time_s,std_time_s,total_time_s
+AEFS,66.73,18.31,333.64
+AllFeatures,1.02,0.13,5.1
+FilterMI,1.89,0.39,9.46
+WrapperRFE,0.73,0.05,3.65

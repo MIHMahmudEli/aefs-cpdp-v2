@@ -1,0 +1,6 @@
+target,original,after_rup,after_sfs,after_shap,after_stability
+equinox,61,47,9,9,7
+jdt,61,46,12,11,9
+lucene,61,46,5,5,5
+mylyn,61,51,6,6,6
+pde,61,50,10,9,7
