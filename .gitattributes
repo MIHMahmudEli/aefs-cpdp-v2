@@ -1,0 +1,10 @@
+# Normalise line endings: the repository stores LF, whatever platform
+# checks the files out or writes them.  Applies on 'git add', so generated
+# files (TikZ figures, CSVs) cannot introduce whole-file CRLF diffs.
+* text=auto
+
+*.pdf   binary
+*.png   binary
+*.zip   binary
+*.pptx  binary
+*.jpg   binary
