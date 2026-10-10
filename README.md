@@ -15,10 +15,10 @@ analysis scripts.
 
 ## Headline results
 
-* Feature count reduced by **62–89%** on all four pools while staying
+* Feature count reduced by **75–89%** on all four pools while staying
   competitive with the SOTA baseline BorutaSHAP (which retains 100% of the
-  features): **|ΔMCC| ≤ 0.071** under identical LOPO protocols.
-* **ReLink**: MCC 0.302 at 61.5% reduction. **NASA MDP**: all methods are
+  features): **|ΔMCC| ≤ 0.077** under identical LOPO protocols.
+* **ReLink**: MCC 0.228 with 78.2% reduction. **NASA MDP**: all methods are
   near-zero MCC (defect rates of only 11–13%).
 * Statistics are reported to Q1 standards: Wilcoxon signed-rank with
   **Cliff's δ** effect sizes and **Holm–Bonferroni** correction within each
