@@ -1,5 +1,5 @@
 # Authoritative environment: every number in results/ and sensitivity/results/
-# was produced with exactly these versions.
+# was produced with exactly these versions (see docs/ENVIRONMENT.md).
 numpy==2.5.1
 pandas==3.0.5
 scipy==1.18.1

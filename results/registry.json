@@ -1,0 +1,199 @@
+{
+  "EXP-001-V": {
+    "id": "EXP-001-V",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [],
+    "result": "D:\\Research\\2. Complete\\AEFS_TEST1\\results\\experiments\\validate\\all_rows.csv",
+    "verified": "2026-10-08T21:03:06",
+    "verification": "n_features identical on 96% (need >=90%); MCC within 0.05 on 84% (need >=80%); mean abs dMCC 0.0196 (need <0.03)"
+  },
+  "EXP-001": {
+    "id": "EXP-001",
+    "status": "VERIFIED",
+    "attempts": 2,
+    "depends_on": [
+      "EXP-001-V"
+    ],
+    "result": "results/experiments/main/all_rows.csv",
+    "started": "2026-10-08T21:00:16",
+    "workers": "kaggle:15",
+    "updated": "2026-10-08T21:35:27",
+    "reason": "attempt1 cancelled after 7h: SVM on TeraPromise (~128k SMOTE rows) cannot finish inside Kaggle's 12h session",
+    "runtime_s": 1800,
+    "verified": "2026-10-08T21:35:28",
+    "verification": "1032 rows, {'aeeem': 5, 'nasa': 4, 'relink': 3, 'tera': 68} targets/pool, methods=['AEFS', 'Ablation_no2D', 'AllFeatures', 'BorutaSHAP', 'FilterMI', 'WrapperRFE']"
+  },
+  "EXP-002": {
+    "id": "EXP-002",
+    "status": "VERIFIED",
+    "attempts": 1,
+    "depends_on": [
+      "EXP-001-V"
+    ],
+    "result": "results/experiments/ablation/all_rows.csv",
+    "started": "2026-10-08T21:35:41",
+    "workers": "kaggle:15",
+    "updated": "2026-10-08T23:35:17",
+    "runtime_s": 3600,
+    "verified": "2026-10-08T23:35:18",
+    "verification": "516 rows, {'aeeem': 5, 'nasa': 4, 'relink': 3, 'tera': 68} targets/pool, methods=['Ablation_noRUP', 'Ablation_noSFS', 'Ablation_noSHAP']"
+  },
+  "EXP-003": {
+    "id": "EXP-003",
+    "status": "VERIFIED",
+    "attempts": 2,
+    "depends_on": [
+      "EXP-001-V"
+    ],
+    "result": "results/experiments/multiseed/all_rows.csv",
+    "started": "2026-10-09T02:12:19",
+    "workers": "kaggle:15",
+    "updated": "2026-10-09T03:53:12",
+    "runtime_s": 3300,
+    "reason": "attempt1 rows lacked seed column; merge collapsed 688 rows (4 of 5 seeds lost) - run_fold now records seed",
+    "verified": "2026-10-09T03:53:13",
+    "verification": "860 rows, {'aeeem': 5, 'nasa': 4, 'relink': 3, 'tera': 68} targets/pool, methods=['AEFS']"
+  },
+  "EXP-004": {
+    "id": "EXP-004",
+    "status": "VERIFIED",
+    "attempts": 2,
+    "depends_on": [
+      "EXP-001-V"
+    ],
+    "result": "results/experiments/cpdp/all_rows.csv",
+    "started": "2026-10-09T00:14:48",
+    "workers": "kaggle:15",
+    "updated": "2026-10-09T01:01:27",
+    "reason": "attempt1: TypeError mutual_info_classif(k=3) -> n_neighbors=3 fixed in aefs_core.select_mi_tw",
+    "runtime_s": 2400,
+    "verified": "2026-10-09T01:01:29",
+    "verification": "344 rows, {'aeeem': 5, 'nasa': 4, 'relink': 3, 'tera': 68} targets/pool, methods=['MI_DS', 'MI_TW']"
+  },
+  "EXP-005": {
+    "id": "EXP-005",
+    "status": "VERIFIED",
+    "attempts": 1,
+    "depends_on": [
+      "EXP-001"
+    ],
+    "result": "results/experiments/sensitivity_nasa_relink/all_rows.csv",
+    "started": "2026-10-09T03:59:14",
+    "workers": "kaggle:15",
+    "updated": "2026-10-09T04:25:08",
+    "runtime_s": 900,
+    "reason": "output missing or empty: results\\experiments\\sensitivity_nasa_relink\\all_rows.csv",
+    "verified": "2026-10-09T04:25:09",
+    "verification": "154 rows, {'nasa': 4, 'relink': 3} targets/pool, experiments=['convergence', 'runtime', 'shap', 'stability']"
+  },
+  "ANL-001": {
+    "id": "ANL-001",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "EXP-001"
+    ],
+    "result": "results/analysis/descriptive.csv",
+    "workers": "local",
+    "runtime_s": 30,
+    "updated": "2026-10-09T04:30:57",
+    "verified": "2026-10-09T04:30:57",
+    "verification": "descriptive.csv exists"
+  },
+  "ANL-002": {
+    "id": "ANL-002",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "EXP-001"
+    ],
+    "result": "results/analysis/rq1_rq2.csv",
+    "workers": "local",
+    "runtime_s": 30,
+    "updated": "2026-10-09T04:30:58",
+    "verified": "2026-10-09T07:52:46",
+    "verification": "rq1_rq2.csv exists"
+  },
+  "ANL-003": {
+    "id": "ANL-003",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "EXP-001",
+      "EXP-002"
+    ],
+    "result": "results/analysis/rq3.csv",
+    "workers": "local",
+    "runtime_s": 30,
+    "updated": "2026-10-09T04:30:58",
+    "verified": "2026-10-09T04:30:58",
+    "verification": "rq3.csv exists"
+  },
+  "ANL-004": {
+    "id": "ANL-004",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "EXP-003"
+    ],
+    "result": "results/analysis/rq4.csv",
+    "workers": "local",
+    "runtime_s": 30,
+    "updated": "2026-10-09T04:30:58",
+    "verified": "2026-10-09T04:30:58",
+    "verification": "rq4.csv exists"
+  },
+  "ANL-005": {
+    "id": "ANL-005",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "EXP-001",
+      "EXP-004"
+    ],
+    "result": "results/analysis/rq5.csv",
+    "workers": "local",
+    "runtime_s": 60,
+    "updated": "2026-10-09T04:30:58",
+    "verified": "2026-10-09T04:30:58",
+    "verification": "rq5.csv exists"
+  },
+  "ANL-006": {
+    "id": "ANL-006",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "EXP-001"
+    ],
+    "result": "results/analysis/rq6.csv",
+    "updated": "2026-10-09T07:32:36",
+    "verified": "2026-10-09T08:24:09",
+    "verification": "rq6.csv exists"
+  },
+  "MS-006": {
+    "id": "MS-006",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "ANL-001",
+      "ANL-002"
+    ],
+    "result": "D:\\Research\\2. Complete\\AEFS_TEST1\\results\\analysis\\tables_regenerated.flag",
+    "updated": "2026-10-09T08:24:09",
+    "verified": "2026-10-09T08:24:09",
+    "verification": "tables_regenerated.flag exists"
+  },
+  "MS-007": {
+    "id": "MS-007",
+    "status": "VERIFIED",
+    "attempts": 0,
+    "depends_on": [
+      "MS-006"
+    ],
+    "result": "D:\\Research\\2. Complete\\AEFS_TEST1\\paper-ist\\main.pdf",
+    "verified": "2026-10-09T10:09:15",
+    "verification": "main.pdf exists"
+  },
+  "_updated": "2026-10-09T10:09:15"
+}

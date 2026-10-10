@@ -1,0 +1,17 @@
+pool,target,method,model,n_features,mean_jaccard,test_mcc,test_f1,test_auc_roc
+tera,camel-1.2,MI_DS,lightgbm,5,,0.1389,0.2877,0.5553
+tera,camel-1.2,MI_DS,random_forest,5,,0.1787,0.3241,0.6482
+tera,camel-1.2,MI_TW,lightgbm,5,,0.1746,0.3601,0.5721
+tera,camel-1.2,MI_TW,random_forest,5,,0.2075,0.3806,0.6422
+tera,kalkulator,MI_DS,lightgbm,5,,0.189,0.25,0.5437
+tera,kalkulator,MI_DS,random_forest,5,,-0.1512,0.0,0.3056
+tera,kalkulator,MI_TW,lightgbm,5,,0.189,0.25,0.6786
+tera,kalkulator,MI_TW,random_forest,5,,0.189,0.25,0.5278
+tera,prop-1,MI_DS,lightgbm,5,,0.1501,0.3524,0.6236
+tera,prop-1,MI_DS,random_forest,5,,0.0941,0.3277,0.5812
+tera,prop-1,MI_TW,lightgbm,5,,0.1744,0.3721,0.6421
+tera,prop-1,MI_TW,random_forest,5,,0.1286,0.3485,0.5984
+tera,termoproject,MI_DS,lightgbm,5,,0.248,0.4,0.7143
+tera,termoproject,MI_DS,random_forest,5,,-0.0208,0.2609,0.5495
+tera,termoproject,MI_TW,lightgbm,5,,0.3868,0.4444,0.6703
+tera,termoproject,MI_TW,random_forest,5,,0.2266,0.3333,0.6291

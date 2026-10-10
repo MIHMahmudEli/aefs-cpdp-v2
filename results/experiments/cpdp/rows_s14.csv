@@ -1,0 +1,17 @@
+pool,target,method,model,n_features,mean_jaccard,test_mcc,test_f1,test_auc_roc
+tera,intercafe,MI_DS,lightgbm,5,,0.3686,0.4615,0.837
+tera,intercafe,MI_DS,random_forest,5,,0.186,0.3333,0.663
+tera,intercafe,MI_TW,lightgbm,5,,0.2564,0.375,0.7065
+tera,intercafe,MI_TW,random_forest,5,,0.1336,0.3,0.7065
+tera,lucene-2.4,MI_DS,lightgbm,5,,0.1295,0.4615,0.5608
+tera,lucene-2.4,MI_DS,random_forest,5,,0.182,0.5081,0.592
+tera,lucene-2.4,MI_TW,lightgbm,5,,0.2069,0.4045,0.5629
+tera,lucene-2.4,MI_TW,random_forest,5,,0.1712,0.5283,0.5603
+tera,redaktor,MI_DS,lightgbm,5,,-0.073,0.172,0.4332
+tera,redaktor,MI_DS,random_forest,5,,0.0222,0.2222,0.4561
+tera,redaktor,MI_TW,lightgbm,5,,-0.0577,0.1449,0.4065
+tera,redaktor,MI_TW,random_forest,5,,-0.0475,0.1728,0.4175
+tera,xalan-2.4,MI_DS,lightgbm,5,,0.2354,0.3791,0.6812
+tera,xalan-2.4,MI_DS,random_forest,5,,0.086,0.2888,0.5785
+tera,xalan-2.4,MI_TW,lightgbm,5,,0.2295,0.375,0.6681
+tera,xalan-2.4,MI_TW,random_forest,5,,0.1209,0.308,0.5791

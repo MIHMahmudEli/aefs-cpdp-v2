@@ -37,9 +37,13 @@ AEFS_Pipeline.ipynb               main pipeline (stages 1-4, LOPO, LightGBM/RF/S
 AEFS_Extended_Eval.ipynb          extended evaluation (5 methods x 3 classifiers)
 AEFS_ReLink_NASA_Expansion.ipynb  ReLink + NASA MDP pools
 AEFS_Sensitivity_Analysis.ipynb   SHAP / stability threshold sweeps, 5-seed runs
-scripts/                          analysis and replication scripts (see below)
+scripts/                          pipeline + analysis + replication scripts (see below)
 data/                             aeeem/ nasa/ relink/ tera/ CSVs (+ AEFS_data.zip mirror)
-results/                          stage-4 and extended results (per pool, per method)
+results/experiments/              raw per-fold rows for every experiment (sharded + merged)
+results/analysis/                 descriptive stats, RQ1-RQ6 CSVs (rq1_rq2..rq6)
+results/*_stage4_results.csv      per-pool x per-method summaries (LightGBM)
+results/*_extended_results.csv    per-pool x per-method summaries (RF / SVM)
+results/registry.json             machine-readable experiment states
 sensitivity/results/              authoritative threshold sweeps, runtime, convergence
 sensitivity/results_kaggle/       independent replication (unpinned, 16 workers)
 sensitivity/results_pinned/       independent replication (pinned library versions)
@@ -52,6 +56,10 @@ The four benchmark pools are the standard public CPDP datasets: AEEEM,
 TeraPromise, NASA MDP and ReLink. `data/` holds them as per-project CSVs in
 a uniform schema; `AEFS_data.zip` is an identical archive of the same files.
 
+Manuscript sources and compiled PDFs are deliberately **not** part of this
+repository; everything needed to re-run the experiments and independently
+re-derive every reported number is here.
+
 ## Reproducing the results
 
 ```bash
@@ -63,12 +71,18 @@ Everything below is scripted and idempotent:
 
 ```bash
 python scripts/regen_sensitivity.py --pools aeeem tera   # threshold sweeps, runtime, convergence
-python scripts/compute_stats.py                          # Tables 2-5 + Wilcoxon/Cliff's delta
+python scripts/compute_stats.py                          # per-pool tables + Wilcoxon/Cliff's delta
 python scripts/stats_q1.py                               # Holm-Bonferroni, Nemenyi, power
+python scripts/analyses.py                               # RQ1-RQ5 statistics from the raw rows
 python scripts/analyze_extended.py                       # extended 5-method x 3-classifier analysis
 python scripts/cmp_replication.py                        # replication vs. authoritative numbers
 python scripts/thread_test.py                            # thread-count nondeterminism check
 ```
+
+`results/analysis/rq6.csv` is the machine-checkable link between the raw
+experiment rows and the narrative claims: every claim maps onto verified
+aggregate values, so a reader can re-derive the paper's numbers directly
+from the CSVs in this repository.
 
 `requirements.txt` pins the exact versions used for every reported number
 in `results/` and `sensitivity/results/`.
@@ -85,7 +99,7 @@ runs are in `sensitivity/results_kaggle/`, `sensitivity/results_pinned/` and
 against the authoritative tables.
 
 A mirrored copy of the code, data and results is available as the Hugging
-Face dataset [`MoshinAli/aefs-cpdp-results`](https://huggingface.co/datasets/MoshinAli/aefs-cpdp-results).
+Face dataset [`MoshinAli/aefs-cpdp`](https://huggingface.co/datasets/MoshinAli/aefs-cpdp).
 
 ## License
 

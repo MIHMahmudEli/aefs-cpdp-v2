@@ -1,0 +1,17 @@
+pool,target,method,model,n_features,mean_jaccard,test_mcc,test_f1,test_auc_roc
+tera,e-learning,MI_DS,lightgbm,5,,0.3423,0.4,0.75
+tera,e-learning,MI_DS,random_forest,5,,0.2318,0.3077,0.7885
+tera,e-learning,MI_TW,lightgbm,5,,0.3423,0.4,0.7654
+tera,e-learning,MI_TW,random_forest,5,,-0.0852,0.0,0.7115
+tera,log4j-1.2,MI_DS,lightgbm,5,,0.1064,0.2358,0.5266
+tera,log4j-1.2,MI_DS,random_forest,5,,0.0372,0.41,0.5848
+tera,log4j-1.2,MI_TW,lightgbm,5,,0.0621,0.2593,0.5094
+tera,log4j-1.2,MI_TW,random_forest,5,,-0.006,0.4017,0.5911
+tera,prop-4,MI_DS,lightgbm,5,,0.2019,0.329,0.6402
+tera,prop-4,MI_DS,random_forest,5,,0.144,0.305,0.614
+tera,prop-4,MI_TW,lightgbm,5,,0.1785,0.313,0.6399
+tera,prop-4,MI_TW,random_forest,5,,0.1219,0.2868,0.5984
+tera,velocity-1.5,MI_DS,lightgbm,5,,0.1588,0.4372,0.6037
+tera,velocity-1.5,MI_DS,random_forest,5,,0.1363,0.51,0.5381
+tera,velocity-1.5,MI_TW,lightgbm,5,,0.1154,0.2945,0.5793
+tera,velocity-1.5,MI_TW,random_forest,5,,0.0348,0.5234,0.5131
