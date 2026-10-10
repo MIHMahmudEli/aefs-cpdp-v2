@@ -1,3 +1,30 @@
+# AEFS v1.1.0
+
+**Final author metadata and figure polish (2026-10-10).**
+
+Supersedes `v1.0.0` with no changes to code, data, or any reported
+number — every result CSV is identical to the v1.0.0 archive. Changes
+in this release:
+
+* **Complete author list** (7 authors) with final ordering and
+  affiliations, matching the submitted manuscript and `CITATION.cff`.
+  (The v1.0.0 Zenodo record was minted before the author list was
+  finalized and lists only the original four.)
+* `results/analysis/rq6.csv` refreshed: the 782-claim audit table with
+  updated manuscript line references (claim values unchanged).
+* Zenodo metadata (`CITATION.cff`, `.zenodo.json`, README) now cites
+  the **concept DOI** `10.5281/zenodo.23274376`, which always resolves
+  to the latest release.
+
+## Provenance
+
+* GitHub: https://github.com/MIHMahmudEli/aefs-cpdp-v2
+* Zenodo concept DOI: https://doi.org/10.5281/zenodo.23274376
+* Hugging Face mirror: https://huggingface.co/datasets/MoshinAli/aefs-cpdp
+* License: MIT
+
+---
+
 # AEFS v1.0.0
 
 **Final experimental record — pre-IST-submission snapshot (2026-10-10).**

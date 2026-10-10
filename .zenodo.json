@@ -1,0 +1,17 @@
+{
+  "title": "AEFS: Adaptive Explainable Feature Selection for Cross-Project Software Defect Prediction",
+  "creators": [
+    {"name": "Hossain, Mohsin Ibna", "affiliation": "American International University-Bangladesh"},
+    {"name": "Jenny, Tasnim Bari", "affiliation": "American International University-Bangladesh"},
+    {"name": "Shornaly, Afroja Hoque", "affiliation": "American International University-Bangladesh"},
+    {"name": "Mazumder, Md. Khairul Alam", "affiliation": "American International University-Bangladesh"},
+    {"name": "Baul, Saikat", "affiliation": "American International University-Bangladesh"},
+    {"name": "Islam, Md Rakibul", "affiliation": "Malmo University"},
+    {"name": "Mridha, Muhammad Firoz", "affiliation": "American International University-Bangladesh"}
+  ],
+  "license": "MIT",
+  "description": "Artifact of the AEFS (Adaptive Explainable Feature Selection) framework for cross-project software defect prediction: reference implementation, four public benchmark pools (AEEEM, TeraPromise, NASA MDP, ReLink; 80 project-versions), raw per-fold results of every experiment, analysis CSVs behind every reported number, and independent replication runs.",
+  "related_identifiers": [
+    {"identifier": "https://github.com/MIHMahmudEli/aefs-cpdp-v2", "relation": "isSupplementTo", "resource_type": "software", "scheme": "url"}
+  ]
+}
