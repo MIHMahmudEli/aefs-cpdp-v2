@@ -48,5 +48,6 @@ experiments and independently re-derive the reported results is here.
 ## Provenance
 
 * GitHub: https://github.com/MIHMahmudEli/aefs-cpdp-v2
+* Zenodo DOI (v1.0.0): https://doi.org/10.5281/zenodo.23274379
 * Hugging Face mirror: https://huggingface.co/datasets/MoshinAli/aefs-cpdp
 * License: MIT

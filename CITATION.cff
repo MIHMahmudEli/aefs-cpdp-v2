@@ -12,6 +12,7 @@ authors:
   - family-names: Mazumder
     given-names: Md. Khairul Alam
 license: MIT
+doi: "10.5281/zenodo.23274379"
 version: "1.0.0"
 date-released: "2026-10-10"
 repository-code: "https://github.com/MIHMahmudEli/aefs-cpdp-v2"

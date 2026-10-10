@@ -103,10 +103,13 @@ Face dataset [`MoshinAli/aefs-cpdp`](https://huggingface.co/datasets/MoshinAli/a
 
 ## Citing this repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23274379.svg)](https://doi.org/10.5281/zenodo.23274379)
+
 Cite via [CITATION.cff](CITATION.cff) (the *Cite this repository* button
 on GitHub). Release history is in [RELEASE_NOTES.md](RELEASE_NOTES.md);
 release `v1.0.0` is the frozen snapshot corresponding to the final
-experimental record.
+experimental record, archived on Zenodo at
+[10.5281/zenodo.23274379](https://doi.org/10.5281/zenodo.23274379).
 
 ## License
 
