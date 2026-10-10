@@ -9,14 +9,14 @@ authors:
     given-names: Tasnim Bari
   - family-names: Shornaly
     given-names: Afroja Hoque
+  - family-names: Mazumder
+    given-names: Md. Khairul Alam
   - family-names: Baul
     given-names: Saikat
   - family-names: Islam
     given-names: Md Rakibul
   - family-names: Mridha
     given-names: Muhammad Firoz
-  - family-names: Mazumder
-    given-names: Md. Khairul Alam
 license: MIT
 doi: "10.5281/zenodo.23274379"
 version: "1.0.0"
