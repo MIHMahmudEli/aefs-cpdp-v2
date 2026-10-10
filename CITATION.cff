@@ -12,6 +12,8 @@ authors:
   - family-names: Mazumder
     given-names: Md. Khairul Alam
 license: MIT
+version: "1.0.0"
+date-released: "2026-10-10"
 repository-code: "https://github.com/MIHMahmudEli/aefs-cpdp-v2"
 keywords:
   - software-defect-prediction

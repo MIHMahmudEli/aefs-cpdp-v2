@@ -101,6 +101,13 @@ against the authoritative tables.
 A mirrored copy of the code, data and results is available as the Hugging
 Face dataset [`MoshinAli/aefs-cpdp`](https://huggingface.co/datasets/MoshinAli/aefs-cpdp).
 
+## Citing this repository
+
+Cite via [CITATION.cff](CITATION.cff) (the *Cite this repository* button
+on GitHub). Release history is in [RELEASE_NOTES.md](RELEASE_NOTES.md);
+release `v1.0.0` is the frozen snapshot corresponding to the final
+experimental record.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
