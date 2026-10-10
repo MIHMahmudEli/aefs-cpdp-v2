@@ -5,16 +5,16 @@ type: software
 authors:
   - family-names: Hossain
     given-names: Mohsin Ibna
+  - family-names: Jenny
+    given-names: Tasnim Bari
+  - family-names: Shornaly
+    given-names: Afroja Hoque
   - family-names: Baul
     given-names: Saikat
   - family-names: Islam
     given-names: Md Rakibul
   - family-names: Mridha
     given-names: Muhammad Firoz
-  - family-names: Jenny
-    given-names: Tasnim Bari
-  - family-names: Shornaly
-    given-names: Afroja Hoque
   - family-names: Mazumder
     given-names: Md. Khairul Alam
 license: MIT
