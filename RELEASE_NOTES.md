@@ -20,6 +20,7 @@ in this release:
 
 * GitHub: https://github.com/MIHMahmudEli/aefs-cpdp-v2
 * Zenodo concept DOI: https://doi.org/10.5281/zenodo.23274376
+* Zenodo v1.1.0 DOI: https://doi.org/10.5281/zenodo.23276071
 * Hugging Face mirror: https://huggingface.co/datasets/MoshinAli/aefs-cpdp
 * License: MIT
 
