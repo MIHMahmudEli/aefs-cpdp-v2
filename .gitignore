@@ -39,8 +39,13 @@ Thumbs.db
 # Manuscripts and internal docs are intentionally NOT in this public repo
 paper/
 paper-ist/
+paper-array/
 docs/
 manuscript/
 *.tex
 *.bib
 *.pptx
+
+# Root-level notebook figure exports (superseded by the manuscript TikZ
+# figures; not referenced by any .tex)
+/figures/

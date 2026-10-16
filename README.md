@@ -48,7 +48,6 @@ sensitivity/results/              authoritative threshold sweeps, runtime, conve
 sensitivity/results_kaggle/       independent replication (unpinned, 16 workers)
 sensitivity/results_pinned/       independent replication (pinned library versions)
 sensitivity/results_multiseed/    5-seed runs
-figures/                          matplotlib exports written by the notebooks
 requirements.txt                  pinned dependencies
 ```
 
